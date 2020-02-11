@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="">
+  <link rel="icon" href="http://drop.car/wp-content/uploads/2015/06/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="http://drop.car/wp-content/uploads/2015/06/favicon.png" type="image/png">
+
+  <title>Valet Parking Services | Valet Parking App | DropCar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <section class="scheduleForm hidden">
+    <div class="scheduleModal"></div>
+    <div class="formContainer">
+      <div class="formHeader">
+        <figure><img src="images/DropcarBlue.png" alt=""></figure>
+        <div class="closeForm"><i class="fa fa-times" aria-hidden="true"></i></div>
+      </div>
+      <h1>Schedule Demo</h1>
+      <form id="ajax-contact" class="scheduleDemoForm" method="post" action="mailer.php">
+        <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
+        <input type="text" id="company" name="company" placeholder="Company (mandatory)" required>
+        <input type="email" id="email" name="email" placeholder="Email (mandatory)" required>
+        <input type="number" id="phone" name="phone" placeholder="Phone (mandatory)" required>
+        <textarea id="message" name="message" placeholder="Comments"></textarea>
+
+        <div id="form-messages" class="formMessages hidden"></div>
+
+        <div class="contact-cta"><button type="submit">Send</button></div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container nav-container">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only"></span><i class="fa fa-bars"></i>
+        </button>
+        <div class="">
+          <a class="navbar-brand" href="index.html"><img class="logoHeader" src="images/DropcarWhite.png" alt=""></a>
+        </div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a href="#">CONSUMER</a>
+          </li>
+          <li>
+            <a class="active" href="index.html">BUSINESS</a>
+          </li>
+          <li>
+            <a href="#">REAL ESTATE</a>
+          </li>
+          <li>
+            <a class="news-menu" href="#">MEDIA</a>
+            <ul class="press-menu">
+              <li class="item-news releases"><a href="#">PRESS RELEASES</a></li>
+              <li class="item-news coverage"><a href="#">MEDIA COVERAGE</a></li>
+              <li class="item-news kit"><a href="#">PRESS KIT</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- <ul class="nav navbar-nav navbar-right navbar">
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li>
+                      <a href="http://admin.drop.car">LOGIN</a>
+                  </li>
+                  <li class="signup">
+                      <a class="buttonSchedule">SCHEDULE DEMO</a>
+                  </li>
+              </ul> -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>Powering the future of urban mobility.</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="signUpSecc">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Transport and maintain your vehicles with DropCar <br>for less than you’re paying now.</h2>
+          <button class="buttonSchedule" type="button" name="button">SCHEDULE DEMO</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec01 gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <figure>
+            <img src="images/pc.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <h1>Hi, I'm VAL. <br>
+            <span>Your Vehicle Assistance & Logistics partner.</span></h1>
+          <h3>No complex setup or installation. Just login and start scheduling requests today. Over time, VAL
+            automatically learns from your request patterns to make operations more efficient.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec02B hidden-sm hidden-md hidden-lg">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <div class="featuredLogo">
+                <img src="images/logo01.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo02.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo03.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo04.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo05.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo06.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo01.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo02.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo03.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo04.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="sec02B hidden-xs">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="featuredLogo">
+                <img src="images/logo07.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo01.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo02.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo03.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo07.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo07.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo04.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo05.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo06.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo07.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec02 gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <h1>Right now, or later. You decide.</h1>
+          <h3>We understand that your business can be unpredictable. Our network of drivers are at the ready to handle
+            however many, or few, deliveries you need.</h3>
+          <button class="buttonSchedule" type="button" name="button">SCHEDULE DEMO</button>
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <figure>
+            <img src="images/img1.png" alt="">
+          </figure>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="sec03">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <h1>Track your vehicles’ exact location in real time.</h1>
+          <h3>Seeing every movement in progress on a single map helps keep you in the loop, and equip your service reps
+            when communicating with customers. Our fully integrated driver safeguards also ensure driving quality &
+            route accuracy.</h3>
+          <button class="invert buttonSchedule" type="button" name="button">SCHEDULE DEMO</button>
+
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec04">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <figure>
+            <img src="images/img4.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <h1>Save money, and eliminate downtime.</h1>
+          <h3>Flat price per movement pricing makes accounting & expense forecasting a breeze. Only pay for what you
+            use, without the overhead of return trips.</h3>
+          <button type="button" class="buttonSchedule" name="button">SCHEDULE DEMO</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec05 gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <h1>Optimize your team on the ground, from the cloud.</h1>
+          <h3>Increase efficiency, and reduce costs by equipping your team with our customizable workforce optimization
+            application. Integrates with VAL.</h3>
+          <button class="buttonSchedule" type="button" name="button">SCHEDULE DEMO</button>
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <figure>
+            <img src="images/img5.png" alt="">
+          </figure>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec06">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <figure>
+            <img src="images/img6.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <h1>Equip your fleet with support services on-demand.</h1>
+          <h3>Offer your clients on demand parking, repairs & maintenance natively inside your products and services in
+            days not months.</h3>
+          <button class="buttonSchedule" type="button" name="button">SCHEDULE DEMO</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec07 gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <h1>Securely store your vehicles, and deploy on-demand.</h1>
+          <h3>Reduce overhead of expensive city center garages, and enable your business to offer customers
+            click-to-door delivery by leveraging our Virtual Garage solutions. Integrates with VAL.</h3>
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <figure>
+            <img src="images/img7copia.png" alt="">
+          </figure>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="signUpSecc">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Transport and maintain your vehicles with DropCar <br>for less than you’re paying now.</h2>
+          <button class="buttonSchedule" type="button" name="button">SCHEDULE DEMO</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="divider"></div>
+    <p class="operations">Hours of Operation:24 hours, 7 Days a Week</p>
+    <ul class="footer-nav">
+      <li class="nobullet"><a target="_blank" href="https://dropcar.zendesk.com/hc/en-us">Help Center</a></li>
+      <li><a target="_blank" href="https://dropcar.zendesk.com/hc/en-us/articles/206031681-Terms-Conditions">Terms &
+          Policies</a></li>
+      <li><a target="_blank"
+          href="http://www.jobscore.com/jobs2/dropcar/valet-parking-attendant/dn6k3oVOCr5iFIiGalkWKP">Become a Valet</a>
+      </li>
+    </ul>
+    <p class="copy">© Copyright – DropCar 2017</p>
+  </footer>
+
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/agency.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/include.js"></script>
+
+</body>
+
+</html>

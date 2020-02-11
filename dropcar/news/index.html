@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="">
+  <link rel="icon" href="http://drop.car/wp-content/uploads/2015/06/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="http://drop.car/wp-content/uploads/2015/06/favicon.png" type="image/png">
+
+  <title>Valet Parking Services | Valet Parking App | DropCar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body id="releases">
+
+  <section class="scheduleForm hidden">
+    <div class="scheduleModal"></div>
+    <div class="formContainer">
+      <div class="formHeader">
+        <figure><img src="images/DropcarBlue.png" alt=""></figure>
+        <div class="closeForm"><i class="fa fa-times" aria-hidden="true"></i></div>
+      </div>
+      <h1>Contact Us</h1>
+      <form id="ajax-contact" class="scheduleDemoForm" method="post" action="mailer.php">
+        <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
+        <input type="text" id="company" name="company" placeholder="Company (mandatory)" required>
+        <input type="email" id="email" name="email" placeholder="Email (mandatory)" required>
+        <input type="number" id="phone" name="phone" placeholder="Phone (mandatory)" required>
+        <textarea id="message" name="message" placeholder="Comments"></textarea>
+
+        <div id="form-messages" class="formMessages hidden"></div>
+
+        <div class="contact-cta"><button type="submit">Send</button></div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container nav-container">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only"></span><i class="fa fa-bars"></i>
+        </button>
+        <div class="">
+          <a class="navbar-brand" href="index.html"><img class="logoHeader" src="images/DropcarWhite.png" alt=""></a>
+        </div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a href="#">CONSUMER</a>
+          </li>
+          <li>
+            <a href="#">BUSINESS</a>
+          </li>
+          <li>
+            <a class="" href="#">REAL ESTATE</a>
+          </li>
+          <li>
+            <a class="active news-menu" href="#">MEDIA</a>
+            <ul class="press-menu">
+              <li class="item-news releases"><a href="#">PRESS RELEASES</a></li>
+              <li class="item-news coverage"><a href="#">MEDIA COVERAGE</a></li>
+              <li class="item-news kit"><a href="#">PRESS KIT</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- <ul class="nav navbar-nav navbar-right navbar">
+        <li class="hidden">
+        <a href="#page-top"></a>
+      </li>
+      <li>
+      <a href="http://admin.drop.car">LOGIN</a>
+    </li>
+    <li class="signup">
+    <a class="buttonSchedule">SCHEDULE DEMO</a>
+  </li>
+</ul> -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="press-contact">
+    <p>For all press inquiries <br> please email: <a href="mailto:press@dropcar.com">press@dropcar.com</a> <br> or call
+      <a href="callto:1234567">[insert phone #]</a></p>
+  </div>
+
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>MEDIA</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="subheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="submenu">
+            <li class="pressRelease active"><a href="#pressRelease" data-toggle="tab">PRESS RELEASES</a></li>
+            <li class="mediaCoverage"><a href="#mediaCoverage" data-toggle="tab">MEDIA COVERAGE</a></li>
+            <li class="mediaKit"><a href="#mediaKit" data-toggle="tab">PRESS KIT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tab-content clearfix">
+    <section id="pressRelease" class="sec01 tab-pane active">
+      <div class="container">
+        <div class="row">
+          <h1 class="news-title">Press Releases</h1>
+        </div>
+
+        <article class="row noticia">
+          <div class="col-xs-12 col-sm-10 col-md-12 col-lg-12 col-right">
+            <h3>globenewswire.com| September 6, 2017 </h3>
+            <h1><a href="#" data-toggle="modal" data-target="#modal-news-1">Manhattan Motorcars Selects DropCar’s
+                Enterprise Platform to Drive Customer Engagement, Increase Efficiency and Boost Service Revenue</a></h1>
+            <h2>DropCar’s cloud-based platform automates logistics of getting customer vehicles to and from dealerships
+              for scheduled service and maintenance utilizing professional valets.</h2>
+          </div>
+
+          <div class="modal fade" id="modal-news-1" role="dialog">
+            <div class="modal-dialog">
+
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Manhattan Motorcars Selects DropCar’s Enterprise Platform to Drive Customer
+                    Engagement, Increase Efficiency and Boost Service Revenue</h1>
+                  <h2 class="modal-subtitle">DropCar’s cloud-based platform automates logistics of getting customer
+                    vehicles to and from dealerships for scheduled service and maintenance utilizing professional valets
+                  </h2>
+                </div>
+                <div class="modal-body">
+                  <p>NEW YORK, Oct. 26, 2017 (GLOBE NEWSWIRE) -- DropCar, Inc. (“DropCar”), a software and logistics
+                    provider of cloud- and app-based vehicle support and concierge services for both the automotive
+                    industry and consumers, today announced a new partnership with Manhattan Motorcars, Inc., a dealer
+                    of Porsche, Bentley, Lamborghini, and Bugatti vehicles. DropCar will provide its Vehicle Assistance
+                    & Logistics technology platform (“VAL”) for Manhattan Motorcars’ maintenance and sales teams,
+                    allowing them to provide an entirely new level of service to their customers.<br><br>
+
+                    Manhattan Motorcars now joins Jaguar and Land Rover of Manhattan, Mercedes Benz of Manhattan and
+                    Lexus of Manhattan, as well as other original equipment manufacturers (OEMs) and dealerships
+                    operating throughout the tristate area that utilize DropCar to support their urban mobility.<br><br>
+
+                    DropCar’s VAL platform coordinates the movements and schedules of professional valets who transport
+                    vehicles to and from dealerships to customer locations, removing the need for a customer to drive
+                    their vehicle in for service. Dealerships access the VAL platform via any browser where they can
+                    schedule, track in real time and report on vehicle movements, repair status and customer feedback.
+                    This level of convenience enables dealers to retain valuable post-sale service contracts and revenue
+                    from their customers.<br><br>
+
+                    “Our platform enables dealerships to modernize their customer experience by removing the time and
+                    hassle associated with bringing a car in for scheduled maintenance or repairs as well as benefiting
+                    from greater transparency into their daily operations,” said Spencer Richardson, co-founder and CEO
+                    of DropCar. “This model fits in well with the emerging trends of automobile ownership as a service,
+                    and we believe enables today’s dealerships to build longer-term relationships with their
+                    customers.”<br><br>
+
+                    DropCar’s VAL platform helps dealerships address challenges stemming from several major societal
+                    shifts, such as:<br><br>
+
+                    Today’s urban professionals have limited time to bring in their vehicles for maintenance and
+                    service;
+                    Increasing real estate costs are forcing many of the vehicle support centers for automotive
+                    providers (i.e., dealerships, including body work and diagnostic shops) out of prime urban areas;
+                    and
+                    New entrants now offer to bring services, such as fueling, damage repair, oil changes, etc.,
+                    directly to the car.
+                    Collectively, these trends are making it harder for dealers to maintain the service revenue they
+                    depend on and DropCar believes that it is well positioned to become the urban mobility partner of
+                    note in adapting to these trends.<br><br>
+
+                    “We sell and service some of the most exclusive brands in the world, and we set the highest
+                    standards for service and quality,” said Marc Faraj, General Manager at Manhattan Motorcars. “We
+                    needed a logistics partner we could trust to deliver those same standards, and DropCar has shown an
+                    ability to do just that. Our clients appreciate the convenience, which enables us to make sure their
+                    vehicles perform at their peak at all times.”<br><br>
+
+                    <b>About DropCar</b><br><br>
+                    Founded and launched in New York City in 2015, DropCar offers its Vehicle Support Platform (VSP), a
+                    cloud-based platform and mobile app that help consumers and automotive-related companies reduce the
+                    cost, hassles and inefficiencies of owning a car, or fleet of cars, in urban centers. Its technology
+                    platform blends the efficiency and scale of cloud computing, machine learning and connected cars
+                    with the high-touch of highly trained valets to move cars to/from fully staffed, secure garages
+                    to/from the people (or businesses) who own them. Consumers use DropCar’s mobile app to ease the cost
+                    and stress of owning a car in the city. Dealerships, leasing companies, OEMs and shared mobility
+                    companies use DropCar’s enterprise platform to reduce costs, streamline logistics and deepen
+                    relationships with customers. More information is available at <a
+                      href="http://www.dropcar.com">www.dropcar.com</a>.
+                    <br><br>
+                    <b>Media Contact</b><br>
+                    John Williams, <br>Scoville PR for DropCar<br>
+                    jwilliams@scovillepr.com <br>(206) 625-0075
+                    <br><br>
+                    <b>Forward-Looking Statements</b>
+                    <br><br>
+                    This press release contains “forward-looking statements” that involve substantial risks and
+                    uncertainties for purposes of the safe harbor provided by the Private Securities Litigation Reform
+                    Act of 1995. All statements, other than statements of historical facts, included in this press
+                    release regarding strategy, future operations, future financial position, future revenue, projected
+                    expenses, prospects, plans and objectives of management are forward-looking statements. Such
+                    statements are based on management’s current expectations and involve risks and uncertainties.
+                    Actual results and performance could differ materially from those projected in the forward-looking
+                    statements as a result of many factors, including, without limitation, the ability to project future
+                    cash utilization and reserves needed for contingent future liabilities and business operations, the
+                    availability of sufficient resources of the combined company to meet its business objectives and
+                    operational requirements and the impact of competitive products and services and technological
+                    changes. The foregoing review of important factors that could cause actual events to differ from
+                    expectations should not be construed as exhaustive and should be read in conjunction with statements
+                    that are included herein and elsewhere, including the risk factors included in WPCS International
+                    Incorporated’s (“WPCS”) registration statement on Form S-4, including the proxy
+                    statement/prospectus/information statement therein, WPCS’ most recent Annual Report on Form 10-K,
+                    and WPCS’ recent Quarterly Report on Form 10-Q and Current Reports on Form 8-K filed with the
+                    Securities and Exchange Commission (the “SEC”). DropCar and WPCS can give no assurance that the
+                    conditions to the transaction will be satisfied. Except as required by applicable law, DropCar and
+                    WPCS undertake no obligation to revise or update any forward-looking statement, or to make any other
+                    forward-looking statements, whether as a result of new information, future events or otherwise.
+                    <br><br>
+                    <b>No Offer or Solicitation</b>
+                    <br><br>
+                    This communication is not intended to and does not constitute an offer to sell or the solicitation
+                    of an offer to subscribe for or buy or an invitation to purchase or subscribe for any securities or
+                    the solicitation of any vote in any jurisdiction pursuant to the proposed transaction or otherwise,
+                    nor shall there be any sale, issuance or transfer of securities in any jurisdiction in contravention
+                    of applicable law. No offer of securities shall be made except by means of a prospectus meeting the
+                    requirements of Section 10 of the United States Securities Act of 1933, as amended. Subject to
+                    certain exceptions to be approved by the relevant regulators or certain facts to be ascertained, the
+                    public offer will not be made directly or indirectly, in or into any jurisdiction where to do so
+                    would constitute a violation of the laws of such jurisdiction, or by use of the mails or by any
+                    means or instrumentality (including without limitation, facsimile transmission, telephone and the
+                    internet) of interstate or foreign commerce, or any facility of a national securities exchange, of
+                    any such jurisdiction.
+                    <br><br>
+                    <b>Additional Information and Where to Find It</b>
+                    <br><br>
+                    In connection with the proposed transaction between WPCS and DropCar, WPCS has filed relevant
+                    materials with the SEC, including a registration statement that contains a proxy statement and
+                    prospectus but the registration statement has not yet become effective. DROPCAR AND WPCS URGE
+                    INVESTORS AND STOCKHOLDERS TO READ THESE MATERIALS CAREFULLY AND IN THEIR ENTIRETY WHEN THEY BECOME
+                    AVAILABLE BECAUSE THEY WILL CONTAIN IMPORTANT INFORMATION ABOUT DROPCAR, WPCS, THE PROPOSED
+                    TRANSACTION AND RELATED MATTERS. Investors and shareholders will be able to obtain free copies of
+                    the proxy statement, prospectus and other documents filed by WPCS with the SEC through the website
+                    maintained by the SEC at www.sec.gov. In addition, investors and stockholders will be able to obtain
+                    free copies of the proxy statement, prospectus and other documents filed by WPCS with the SEC by
+                    contacting Investor Relations by mail at WPCS International Incorporated, 521 Railroad Way, Suisun
+                    City, CA 94585, Attention: Chief Financial Officer. Investors and stockholders are urged to read the
+                    proxy statement, prospectus and the other relevant materials when they become available before
+                    making any voting or investment decision with respect to the proposed transaction.
+                    <br><br>
+                    <b>Participants in the Solicitation</b>
+                    <br><br>
+                    WPCS and DropCar, and each of their respective directors and executive officers and certain of their
+                    other members of management and employees, may be deemed to be participants in the solicitation of
+                    proxies in connection with the proposed transaction. Information about WPCS’s directors and
+                    executive officers is included in WPCS’s Annual Report on Form 10-K for the year April 30, 2017,
+                    filed with the SEC on July 21, 2017. Additional information regarding these persons and their
+                    interests in the transaction will be included in the proxy statement relating to the transaction
+                    when it is filed with the SEC. These documents can be obtained free of charge from the sources
+                    indicated below.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </article>
+
+        <div class="divider"> </div>
+
+        <article class="row noticia">
+          <div class="col-xs-12 col-sm-10 col-md-12 col-lg-12 col-right">
+            <h3>marketwired.com | October 26, 2017 </h3>
+            <h1><a href="#" data-toggle="modal" data-target="#modal-news-2">WPCS and DropCar Announce Definitive Merger
+                Agreement</a></h1>
+            <h2>Merger to provide public currency and financial flexibility for DropCar's growing automotive logistics
+              offerings</h2>
+          </div>
+
+
+          <div class="modal fade" id="modal-news-2" role="dialog">
+            <div class="modal-dialog">
+
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">WPCS and DropCar Announce Definitive Merger Agreement</h1>
+                  <h2 class="modal-subtitle">Merger to provide public currency and financial flexibility for DropCar's
+                    growing automotive logistics offerings</h2>
+                </div>
+                <div class="modal-body">
+                  <p>SUISUN, CA--(Marketwired - Sep 6, 2017) - WPCS International Incorporated (NASDAQ: WPCS), a
+                    low-voltage solutions provider and DropCar, Inc. ("DropCar"), a privately-held provider of app-based
+                    automotive logistics and concierge services for both consumers and the automotive industry, jointly
+                    announced that today the parties have entered into a definitive merger agreement whereby WPCS will
+                    acquire DropCar in an all-stock transaction.<br><br>
+                    According to Sebastian Giordano, CEO of WPCS, "Our goal has been to provide an opportunity to
+                    enhance stockholder value, and we believe that DropCar is well-positioned to capitalize on the
+                    burgeoning auto-tech and next-generation mobility and logistics services industry."
+                    Key aspects include:<br><br>
+                    DropCar is a leading provider of a cloud and app based logistics and vehicle support platform that
+                    reduces the costs, hassles, and inefficiencies of owning or servicing a car or fleet in urban
+                    areas;<br><br>
+
+                    DropCar's multi-channel business model is positioned for expansion into new markets and continued
+                    partnerships with large OEMs, automotive branded dealerships, shared mobility providers, fleet
+                    owners and real estate developers; <br><br>
+
+                    Current stockholders of WPCS are expected to own approximately 15% of the outstanding common stock
+                    of WPCS (after giving effect to the dilutive effect of outstanding WPCS stock options) and the
+                    stockholders of, and certain advisors to, DropCar are expected to own approximately 85% of the
+                    outstanding common stock of WPCS (after giving effect to the exercise of all outstanding DropCar
+                    warrants). <br><br>
+
+                    A highly qualified management team with substantial and demonstrated experience in technological
+                    innovation and automotive-related logistics will lead the combined company. DropCar's Co-Founder and
+                    CEO, Spencer Richardson will assume the role of CEO of the merged entity, while Mr. Giordano will
+                    remain as a member of the Board of Directors. In addition to Messrs. Richardson and Giordano, the
+                    Board will be comprised of a total of seven directors, including, DropCar's Co-Founder, David
+                    Newman, three DropCar designees, and Joshua Silverman who currently serves on WPCS's Board.<br><br>
+                    Mr. Richardson is a proven and successful technology innovator who previously built FanBridge into a
+                    premier Fan Audience CRM platform with over 600 million fan relationships. Mr. Newman will continue
+                    to lead DropCar's business-development, leveraging his 20 years of experience in the legal, real
+                    estate and parking garage sectors.<br><br>
+                    Mr. Richardson stated that, "Today, our platform takes away the hassle of owning a car in the city
+                    for consumers while simultaneously helping OEMs, dealers, and shared mobility providers reduce costs
+                    and deepen connections with customers. We believe this merger will enable us to further scale this
+                    platform and position us well to become the de-facto standard in a future where auto purchases give
+                    way to auto subscriptions."<br><br>
+                    Immediately following the completion of the merger, the current stockholders of WPCS are expected to
+                    own approximately 15% of the outstanding common stock of WPCS (after giving effect to the dilutive
+                    effect of outstanding WPCS stock options) and the stockholders of DropCar, as well as certain
+                    advisors to DropCar, are expected to own the remaining approximately 85% of the outstanding common
+                    stock of WPCS (after giving effect to the exercise of all outstanding DropCar warrants). The actual
+                    allocation of equity will be subject to adjustment based on various factors, including WPCS' "net
+                    cash" balance at closing.<br><br>
+                    The transaction, which has been approved by the board of directors of both companies, is expected to
+                    occur in the fourth quarter of 2017, subject to various conditions, including: approval by the
+                    stockholders of both WPCS and DropCar; a requirement by DropCar to raise at least $4 million prior
+                    to the consummation of the merger; and approval by NASDAQ for the listing of WPCS common stock
+                    immediately upon consummation of the merger.
+                    Upon closing of the transaction, the merged company will operate under the DropCar name, and the
+                    Company's common stock will trade on the NASDAQ Capital Market under a ticker symbol to be announced
+                    at a later date.<br><br>
+                    Palladium Capital Advisors, LLC acted as the advisor to DropCar on this transaction and Mintz,
+                    Levin, Cohn, Ferris, Glovsky and Popeo, P.C. acted as legal counsel to DropCar. Morse, Zelnick, Rose
+                    & Lander, LLP acted as legal counsel to WPCS.<br><br>
+                    <b>Investor Teleconference</b><br><br>
+                    WPCS and DropCar will host a joint teleconference this afternoon, September 6, 2017, at 4:15 PM EDT
+                    to discuss today's announcement.
+                    To access the live conference call, participants may dial 888-428-9506, Participant Passcode:
+                    9276054.
+                    A recorded replay of the teleconference will be available on the WPCS website. The replay may be
+                    accessed through the "newsroom" section of WPCS website, http://www.wpcs.com/newsroom.php.<br><br>
+                    <b>About WPCS International Incorporated</b><br><br>
+                    WPCS is a full-service, low-voltage solutions provider, installing and servicing integrated
+                    structured cabling, audio-visual, and security systems for public services, healthcare, energy, and
+                    corporate enterprise markets in the United States. The Company delivers end-to-end solutions,
+                    superior project management, and best-in-class products and technology. For more information about
+                    WPCS, please visit www.wpcs.com.<br><br>
+                    <b>About DropCar</b><br><br>
+                    Founded and launched in New York City in 2015, DropCar offers a cloud-based platform and mobile app
+                    that help consumers and automotive-related companies reduce the cost, hassles and inefficiencies of
+                    owning a car, or fleet of cars, in urban centers. Its technology platform blends the efficiency and
+                    scale of cloud computing, machine learning and connected cars with the high-touch of highly trained
+                    valets to move cars to/from fully staffed, secure garages to/from the people (or businesses) who own
+                    them. Consumers use DropCar's mobile app to ease the cost and stress of owning a car in the city.
+                    Dealerships, leasing companies, OEMs and shared mobility companies use DropCar's enterprise platform
+                    to reduce costs, streamline logistics and deepen relationships with customers. More information is
+                    available at www.dropcar.com.<br><br>
+                    <b>Additional Information about the Proposed Merger and Where to Find It</b><br><br>
+                    In connection with the proposed merger, WPCS and DropCar intend to file relevant materials with the
+                    Securities and Exchange Commission, or the SEC, including a registration statement on Form S-4 that
+                    will contain a proxy statement / prospectus /information statement. Investors and securityholders of
+                    WPCS and DropCar are urged to read these materials when they become available because they will
+                    contain important information about WPCS, DropCar and the proposed merger. The proxy statement /
+                    prospectus / information statement and other relevant materials (when they become available), and
+                    any other documents filed by WPCS with the SEC, may be obtained free of charge at the SEC web site
+                    at www.sec.gov.<br><br>
+                    In addition, investors and securityholders may obtain free copies of the documents filed with the
+                    SEC by WPCS by directing a written request to: WPCS International Incorporated, 521 Railroad Way,
+                    Suisun City, CA 94585, Attention: Chief Financial Officer.<br><br>
+                    Investors and securityholders are urged to read the proxy statement / prospectus / information
+                    statement and the other relevant materials when they become available before making any voting or
+                    investment decision with respect to the proposed merger.<br><br>
+                    This communication shall not constitute an offer to sell or the solicitation of an offer to sell or
+                    the solicitation of an offer to buy any securities, nor shall there be any sale of securities in any
+                    jurisdiction in which such offer, solicitation or sale would be unlawful prior to registration or
+                    qualification under the securities laws of any such jurisdiction. No offering of securities in the
+                    proposed merger shall be made except by means of a prospectus meeting the requirements of Section 10
+                    of the Securities Act of 1933, as amended.<br><br>
+                    <b>Participants in the Solicitation</b><br><br>
+                    WPCS and its directors and executive officers and DropCar and its directors and executive officers
+                    may be deemed to be participants in the solicitation of proxies from the stockholders of WPCS in the
+                    proposed transaction. Information regarding the special interests of these directors and executive
+                    officers in the proposed merger will be included in the proxy statement / prospectus / information
+                    statement referred to above. Additional information regarding the directors and executive officers
+                    of WPCS is also included in WPCS's Annual Report on Form 10-K for the year ended April 30, 2017,
+                    which was filed with the SEC on July 21, 2017. These documents are available free of charge at the
+                    SEC's web site (http://www.sec.gov) and from Investor Relations at WPCS at the address described
+                    above.<br><br>
+                    <b>Forward-Looking Statements</b><br><br>
+                    This press release contains "forward-looking statements" that involve substantial risks and
+                    uncertainties for purposes of the safe harbor provided by the Private Securities Litigation Reform
+                    Act of 1995. All statements, other than statements of historical facts, included in this press
+                    release regarding strategy, future operations, future financial position, future revenue, projected
+                    expenses, prospects, plans and objectives of management are forward-looking statements. Examples of
+                    such statements include, but are not limited to, statements relating to the structure, timing and
+                    completion of the proposed merger or financing; WPCS's continued listing on the NASDAQ Capital
+                    Market until closing of the proposed merger; the combined company's listing on the NASDAQ Capital
+                    Market after closing of the proposed merger; expectations regarding the capitalization, resources
+                    and ownership structure of the combined company; the adequacy of the combined company's capital to
+                    support its future operations and expand its product and service offerings; the nature, strategy and
+                    focus of the combined company; and the executive and board structure of the combined company. WPCS
+                    and/or DropCar may not actually achieve the plans, carry out the intentions or meet the expectations
+                    or projections disclosed in the forward-looking statements and you should not place undue reliance
+                    on these forward-looking statements. Such statements are based on management's current expectations
+                    and involve risks and uncertainties. Actual results and performance could differ materially from
+                    those projected in the forward-looking statements as a result of many factors, including, without
+                    limitation, risks and uncertainties associated with stockholder approval of and the ability to
+                    consummate the proposed merger through the process being conducted by WPCS and DropCar, and to
+                    consummate the merger and the other transactions contemplated by the Merger Agreement, the ability
+                    to project future cash utilization and reserves needed for contingent future liabilities and
+                    business operations, the availability of sufficient resources of the combined company to meet its
+                    business objectives and operational requirements and the impact of competitive products and services
+                    and technological changes. WPCS and DropCar each disclaims any intent or obligation to update these
+                    forward-looking statements to reflect events or circumstances that exist after the date on which
+                    they were made.
+                    <br><br>
+                    <b>CONTACT INFORMATION</b><br><br>
+                    <b>Investor Contacts:</b><br>
+
+                    <b>WPCS International Incorporated</b><br>
+
+                    <b>Investor Relations Department</b><br>
+                    917.909.6330<br>
+                    Email Contact<br><br>
+
+                    <b>DropCar:</b><br>
+
+                    Daniel Gelbtuch<br>
+                    VP of Corporate Finance and Investor Relations<br>
+                    917.509.9582<br>
+                    Email Contact</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <section id="mediaCoverage" class="sec01 tab-pane">
+      <div class="container">
+        <div class="row">
+          <h1 class="news-title">Media Coverage</h1>
+        </div>
+        <article class="row noticia">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-left">
+            <a target="_blank"
+              href="http://www.nydailynews.com/autos/street-smarts/dropcar-parking-valet-service-affordable-new-york-city-article-1.3098864"><img
+                src="images/logo-dailynews.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-right">
+            <h3><a target="_blank"
+                href="http://www.nydailynews.com/autos/street-smarts/dropcar-parking-valet-service-affordable-new-york-city-article-1.3098864">nydailynews.com</a>
+              | April 25, 2017 </h3>
+            <h1><a target="_blank"
+                href="http://www.nydailynews.com/autos/street-smarts/dropcar-parking-valet-service-affordable-new-york-city-article-1.3098864">DropCar
+                uses technology to undercut New York parking industry, offers $15/hour valet service</a></h1>
+            <h2>At roughly 1:30 p.m., Manhattan resident Sue Bernstock used a smartphone app to request a ride from the
+              heart of Midtown to Columbus Circle, not from an Uber driver or taxi, but from her own car.</h2>
+          </div>
+        </article>
+
+        <div class="divider"> </div>
+
+        <article class="row noticia">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-left">
+            <a target="_blank"
+              href="https://www.pymnts.com/news/2017/uber-of-x-dropcar-is-the-uber-of-city-parking/"><img
+                src="images/logo-pymnts.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-right">
+            <h3><a target="_blank"
+                href="https://www.pymnts.com/news/2017/uber-of-x-dropcar-is-the-uber-of-city-parking/">pymnts.com</a> |
+              March 1, 2017 </h3>
+            <h1><a target="_blank"
+                href="https://www.pymnts.com/news/2017/uber-of-x-dropcar-is-the-uber-of-city-parking/">Uber of X:
+                DropCar is the Uber of City Parking</a></h1>
+            <h2>Anyone who owns a car and has lived in a large city for longer than a week understands the pains of
+              parking in an urban environment.</h2>
+          </div>
+        </article>
+
+        <div class="divider"> </div>
+
+        <div class="row noticia">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-left">
+            <a target="_blank"
+              href="http://www.slate.com/blogs/moneybox/2017/06/01/what_on_demand_valets_can_teach_us_about_the_american_city.html"><img
+                src="images/logo-slate.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-right">
+            <h3><a target="_blank"
+                href="http://www.slate.com/blogs/moneybox/2017/06/01/what_on_demand_valets_can_teach_us_about_the_american_city.html">slate.com</a>
+              | June 1, 2017 </h3>
+            <h1><a target="_blank"
+                href="http://www.slate.com/blogs/moneybox/2017/06/01/what_on_demand_valets_can_teach_us_about_the_american_city.html">This
+                On-Demand Valet Startup Is Booming. That’s a Sign That Something’s Wrong With the American City.</a>
+            </h1>
+            <h2>In Ferris Bueller’s Day Off, there’s a scene in which our teenage heroes drop Cam’s dad’s precious red
+              Ferrari at a downtown parking garage. “You fellas have nothing to worry about,” the attendant says from
+              the driver’s seat. “I’m a professional.” Moments later, he’s burning rubber on the streets of Chicago.
+            </h2>
+          </div>
+        </div>
+
+        <div class="divider"> </div>
+
+        <article class="row noticia">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-left">
+            <a target="_blank"
+              href="https://www.pymnts.com/uber-of-x/2016/uber-of-x-dropcar-uber-of-valet-parking-and-car-services/"><img
+                src="images/logo-pymnts.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-right">
+            <h3><a target="_blank"
+                href="https://www.pymnts.com/uber-of-x/2016/uber-of-x-dropcar-uber-of-valet-parking-and-car-services/">pymnts.com</a>
+              | November 30, 2016 </h3>
+            <h1><a target="_blank"
+                href="https://www.pymnts.com/uber-of-x/2016/uber-of-x-dropcar-uber-of-valet-parking-and-car-services/">Uber
+                Of X: DropCar, Uber Of Valet Parking And Car Services</a></h1>
+            <h2>It seems as though valet parking tends to be reserved for restaurant patrons and residents of Los
+              Angeles. While many cities may not be able to accommodate valet parking, an “Uber of X” business is
+              focused on doing just that.</h2>
+          </div>
+        </article>
+
+        <div class="divider"> </div>
+
+        <article class="row noticia">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-left">
+            <a target="_blank" href="http://www.alleywatch.com/2017/01/nyc-startup-parks-car/"><img
+                src="images/logo-alleywatch.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-right">
+            <h3><a target="_blank" href="http://www.alleywatch.com/2017/01/nyc-startup-parks-car/">alleywatch.com</a> |
+              December, 2016 </h3>
+            <h1><a target="_blank" href="http://www.alleywatch.com/2017/01/nyc-startup-parks-car/">This NYC Startup
+                Parks Your Car For You</a></h1>
+            <h2>Parking a car on the street in NYC collectively accounts for millions of hours per year for New Yorkers.
+              Between the alternate side parking, fines, and simply searching for parking, you may just never want to
+              park again or get rid of your car. If this sounds like you, DropCar is...</h2>
+          </div>
+        </article>
+
+        <div class="divider"> </div>
+
+        <article class="row noticia">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-left">
+            <a target="_blank"
+              href="http://www.ozy.com/rising-stars/the-future-of-your-car-and-no-its-not-google-or-tesla-or-uber/77270"><img
+                src="images/logo-ozy.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-right">
+            <h3><a target="_blank"
+                href="http://www.ozy.com/rising-stars/the-future-of-your-car-and-no-its-not-google-or-tesla-or-uber/77270">ozy.com</a>
+              | July 4, 2017 </h3>
+            <h1><a target="_blank"
+                href="http://www.ozy.com/rising-stars/the-future-of-your-car-and-no-its-not-google-or-tesla-or-uber/77270">THE
+                FUTURE OF YOUR CAR — AND NO, IT'S NOT GOOGLE OR TESLA OR UBER</a></h1>
+            <h2>Spencer Richardson wants to spare you the aggravation of looking for a parking spot — and offer you the
+              luxury of having your car delivered to you</h2>
+          </div>
+        </article>
+    </section>
+
+    <section id="mediaKit" class="sec01 tab-pane">
+      <div class="container">
+        <div class="row">
+          <h1 class="news-title">Press kit</h1>
+        </div>
+
+        <article class="row">
+          <h1>Our company</h1>
+          <h2>Founded and launched in New York City in 2015, DropCar offers its Vehicle Support Platform (VSP), a
+            cloud-based platform and mobile app that help consumers and automotive-related companies reduce the cost,
+            hassles and inefficiencies of owning a car, or fleet of cars, in urban centers.
+            <br>
+            DropCar’s technology platform blends the efficiency and scale of cloud computing, machine learning and
+            connected cars with the high-touch of highly trained valets to move cars to/from fully staffed, secure
+            garages to/from the people (or businesses) who own them.
+            <br>
+            Consumers use DropCar’s mobile app to ease the cost and stress of owning a car in the city. Dealerships,
+            leasing companies, auto manufacturers and shared mobility companies use DropCar’s enterprise platform to
+            reduce costs, streamline logistics and deepen relationships with customers.
+          </h2>
+        </article>
+
+        <div class="divider"> </div>
+
+        <article class="row">
+          <h1>Our logo</h1>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 media-logo">
+            <img src="images/logo-wb.png" alt="">
+            <p>Use for white background</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 media-logo">
+            <img src="images/logo-bb.png" alt="">
+            <p>Use for black and colour background</p>
+          </div>
+        </article>
+        <div class="row">
+          <!-- <a class="download-kit" href="#">DOWNLOAD KIT</a> -->
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <footer>
+    <div class="divider"></div>
+    <p class="operations">Hours of Operation:24 hours, 7 Days a Week</p>
+    <ul class="footer-nav">
+      <li class="nobullet"><a target="_blank" href="https://dropcar.zendesk.com/hc/en-us">Help Center</a></li>
+      <li><a target="_blank" href="https://dropcar.zendesk.com/hc/en-us/articles/206031681-Terms-Conditions">Terms &
+          Policies</a></li>
+      <li><a target="_blank"
+          href="http://www.jobscore.com/jobs2/dropcar/valet-parking-attendant/dn6k3oVOCr5iFIiGalkWKP">Become a Valet</a>
+      </li>
+    </ul>
+    <p class="copy">© Copyright – DropCar 2017</p>
+  </footer>
+
+
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/agency.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/include.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+</body>
+
+</html>

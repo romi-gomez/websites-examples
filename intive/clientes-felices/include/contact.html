@@ -1,0 +1,52 @@
+
+<div class="container">
+  <div class="row">
+    <div id="contact-form" class="contact-form">
+      <div class="contact-left">
+        <h3>Contactanos</h3>
+        <div id="form-messages" class="formMessages hidden"></div>
+
+        <form class=""id="ajax-contact" action="mailer.php" method="post">
+          <input type="text" id="name" name="name" value="" placeholder="Nombre" required>
+          <input type="text" id="company" name="company" value="" placeholder="Empresa" required>
+          <input type="email" id="email" name="email" value="" placeholder="Email" required>
+          <textarea  id="message" name="message" value="" rows="8" cols="80" placeholder="Mensaje" required></textarea>
+          <div class="bottom">
+            <div class="g-recaptcha-outer">
+              <div class="g-recaptcha-inner">
+                <div class="g-recaptcha"  data-sitekey="6LdzmCQUAAAAAHwoFvmRcA5TSHcG-Vhcpm8kqv8J"></div></div>
+              </div>
+            <button type="submit"name="">Enviar</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-infos">
+          <div class="contact-info">
+            <p>Escribinos un email:</p>
+            <a href="mailto:info@intive-fdv.com.ar">info@intive-fdv.com</a>
+          </div>
+          <div class="contact-info">
+            <p>Buenos Aires | LATAM</p>
+            <a href="(+54 11) 5239.9899">(+54 11) 5239.9899</a>
+          </div>
+          <!-- <div class="contact-info">
+            <p>USA</p>
+            <a href="+1 917.477.4766">+1 917.477.4766</a>
+          </div> -->
+        </div>
+
+        <div class="follow-info">
+          <p>Seguinos en:</p>
+          <div class="follow-icon"><a href="https://www.facebook.com/intiveFDV/" target="_blank"><img src="images/facebook-wh.png" alt=""></a></div>
+          <div class="follow-icon"><a href="https://twitter.com/intive_FDV" target="_blank"><img src="images/twitter-wh.png" alt=""></a></div>
+          <div class="follow-icon"><a href="https://www.instagram.com/intive_fdv/" target="_blank"><img src="images/instagram-wh.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="vendor/js/app.js"></script>

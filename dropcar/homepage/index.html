@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="">
+  <link rel="icon" href="http://drop.car/wp-content/uploads/2015/06/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="http://drop.car/wp-content/uploads/2015/06/favicon.png" type="image/png">
+
+  <title>Valet Parking Services | Valet Parking App | DropCar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body id="consumer">
+  <section class="scheduleForm hidden">
+    <div class="scheduleModal"></div>
+    <div class="formContainer">
+      <div class="formHeader">
+        <figure><img src="images/DropcarBlue.png" alt=""></figure>
+        <div class="closeForm"><i class="fa fa-times" aria-hidden="true"></i></div>
+      </div>
+      <h1>Contact Us</h1>
+      <form id="ajax-contact" class="scheduleDemoForm" method="post" action="mailer.php">
+        <input type="text" id="name" name="name" placeholder="Name (mandatory)" required>
+        <input type="text" id="company" name="company" placeholder="Company (mandatory)" required>
+        <input type="email" id="email" name="email" placeholder="Email (mandatory)" required>
+        <input type="number" id="phone" name="phone" placeholder="Phone (mandatory)" required>
+        <textarea id="message" name="message" placeholder="Comments"></textarea>
+
+        <div id="form-messages" class="formMessages hidden"></div>
+
+        <div class="contact-cta"><button type="submit">Send</button></div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container nav-container">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only"></span><i class="fa fa-bars"></i>
+        </button>
+        <div class="">
+          <a class="navbar-brand" href="index.html"><img class="logoHeader" src="images/DropcarWhite.png" alt=""></a>
+        </div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="active" href="index.html">CONSUMER</a>
+          </li>
+          <li>
+            <a href="#">BUSINESS</a>
+          </li>
+          <li>
+            <a class="news-menu" href="#">MEDIA</a>
+            <ul class="press-menu">
+              <li class="item-news releases"><a href="#">PRESS RELEASES</a></li>
+              <li class="item-news coverage"><a href="#">MEDIA COVERAGE</a></li>
+              <li class="item-news kit"><a href="#">PRESS KIT</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- <ul class="nav navbar-nav navbar-right navbar">
+        <li class="hidden">
+        <a href="#page-top"></a>
+      </li>
+      <li>
+      <a href="http://admin.drop.car">LOGIN</a>
+    </li>
+    <li class="signup">
+    <a class="buttonSchedule">SCHEDULE DEMO</a>
+  </li>
+</ul> -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <h1>Forget about parking.</h1>
+          <h2>No more searching for a garage, circling the block, or worrying about a meter. We come to you.</h2>
+
+          <article class="download-buttons hidden-xs">
+            <a target="_blank"
+              href="https://itunes.apple.com/us/app/dropcar-valet-parking-on-demand./id972228592?mt=8#"><button
+                type="button" name="button"><img src="images/appStore.png" alt=""></button></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dropcar.owner"><button
+                class="play" type="button" name="button"><img src="images/googlePlay.png" alt=""></button></a>
+          </article>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <figure id="video" class="videoIntro">
+            <video src="images/DropCar_V7.mp4" autoplay muted poster="images/iphoneScreen.png" loop>
+            </video>
+            <img class="" src="images/iphone.png" alt="">
+          </figure>
+        </div>
+
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+          <article class="download-buttons">
+            <a target="_blank"
+              href="https://itunes.apple.com/us/app/dropcar-valet-parking-on-demand./id972228592?mt=8#"><button
+                type="button" name="button"><img src="images/appStore.png" alt=""></button></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dropcar.owner"><button
+                class="play" type="button" name="button"><img src="images/googlePlay.png" alt=""></button></a>
+          </article>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+
+  <section class="signUpSecc">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <figure class="message">
+            <img src="images/message.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+          <div id="carousel-example-generic" class="carousel slide .carousel-fade" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <article class="testimonials">
+                  <h3>Amazing valet parking app</h3>
+                  <h4>Danshdh</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>It’s time has come. Taking the pain out of parking. Amazing door to door service and I’ll never be
+                    late for an appointment again. What a brilliant idea!</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Amazing should be used by everyone</h3>
+                  <h4>YY Stern</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>This app has great service and always comes right on time.</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Amazing app</h3>
+                  <h4>Beckeyyyy</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>This app is so clutch. Amazing idea. They come on time, I advise everyone to use. Great jobs, guys.
+                  </p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Crazy good</h3>
+                  <h4>Williamaa</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>How amazing. Love it.</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Awesome and convenient</h3>
+                  <h4>Mitta34</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>I love dropcar, it offers great choices and awesome customer service. Use this code wb17rf and get
+                    a 20off. Valets are very pleasant, professional and willing to go above and beyond to meet your
+                    needs and work around your constraints. DropCar Customer service is something many companies should
+                    learn from. I have been using monthly services for a last 4 month, it is very easy and affordable,
+                    wish i knew about drop car sooner!!!</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Amazing</h3>
+                  <h4>Sunset Park James</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>I love this service!! Very professional and responsive. My friends are always impressed when a
+                    valet picks my car up right in front of my office or a restaurant and then brings it back with the
+                    touch of a button. I feel rich every time I use Dropcar but somehow they've managed to make it
+                    affordable! </p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Great alternative to monthly garages!</h3>
+                  <h4>Leslie216216</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>I've been using the app for a few months now and it's pretty reliable! The drivers are punctual and
+                    professional and the service is generally seamless. It takes a bit more planning ahead, but it's
+                    really convenient and less expensive than my local garage in NYC.</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Great service!</h3>
+                  <h4>Stones#m</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>Love this app and service. So convenient to use and great communication! </p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Mrs.</h3>
+                  <h4>Nero Gregorio</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>Very useful app, great service!</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Saves time and money</h3>
+                  <h4>Great app searcher</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>I use Dropcar on a daily basis. This service is the key to affordable parking in Manhattan.</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Love this service!</h3>
+                  <h4>SC10023</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>I am a monthly service customer, and I couldn't be happier! On top of having someone pick up my
+                    car, park it, and then return it to me at the click of a button - amazing! Customer service is
+                    exceptional and they go out of their way to accommodate the customer. This is a fantastic company!
+                  </p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Amazing!! The city is a pleasure now!!!</h3>
+                  <h4>Samanthe Roberts</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>This app is amazing. It makes the city hassle free. I did not have to worry about the parking my
+                    car. This new app has fast service and is amazing... Everyone should download this app and use it..
+                    You will love it!!!</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Simply the best app</h3>
+                  <h4>LSDVINCI</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>Saves me time and money. Has changed my lifestyle in that I don't have to worry about my car when
+                    in the city for meetings. I pull up, leave it with a drop car guy, and when I'm done, he's outside
+                    waiting. A click and it's all done for a fraction of any nearby garage.</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Best service!!!</h3>
+                  <h4>Joel-beek</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>Getting around the city has never been better then this. Thanks to drop car. You guys rock !!!!</p>
+                </article>
+              </div>
+
+              <div class="item">
+                <article class="testimonials">
+                  <h3>Best service!!!</h3>
+                  <h4>Jfbk</h4>
+                  <figure>
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                    <img src="images/fullStar.png" alt="">
+                  </figure>
+                  <p>They waited for me outside the Dr. It would have been a disaster to park and cost 3x as much. A
+                    great service that I will definitely use again!!!</p>
+                </article>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sec01 gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+          <h1>Great to meet you!</h1>
+          <h3>Avoid the detour. Let one of our friendly & professional valets meet you right at your destination.</h3>
+
+          <article class="options col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+            <div class="option col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="optioninner">
+                <div class="will">
+                  <figure>
+                    <img class="willInner" src="images/Will.png" alt="">
+                  </figure>
+                  <h2>WILL</h2>
+                  <div class="waitTxt">
+                    <b><u>waits</u></b> with your car while you:<br>
+                    <span>
+                      <div id="carousel-example-generic" class="carousel .carousel-fade" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="active item roll">
+                            <b>ENJOY THE SHOW</b>
+                          </div>
+                          <div class="item roll">
+                            <b>EAT DINNER</b>
+                          </div>
+                          <div class="item roll">
+                            <b>ROCK YOUR MEETING</b>
+                          </div>
+                          <div class="item roll">
+                            <b>GROCERY SHOP</b>
+                          </div>
+                          <div class="item roll">
+                            <b>WATCH THE GAME</b>
+                          </div>
+                          <div class="item roll">
+                            <b>GO SHOPPING</b>
+                          </div>
+                          <div class="item roll">
+                            <b>VISIT THE DOCTOR</b>
+                          </div>
+                          <div class="item roll">
+                            <b>PICKUP THE KIDS</b>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  <p class="price">$15 <span>/hr</span></p>
+                  <p class="tax"><br>tax included <br> no oversize vehicle fees</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="option col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="optioninner">
+                <div class="steve">
+                  <figure>
+                    <img class="steveInner" src="images/Steve.png" alt="">
+                  </figure>
+                  <h2>STEVE</h2>
+                  <div class="waitTxt"><b><u>stores</u></b> your car when you don’t need it,<br> and drives it back to
+                    you when you do.</div>
+                  <p class="price">$349 <span>/month</span></p>
+                  <p class="tax"><br>tax included <br> no oversize vehicle fees</p>
+                </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="sec02 hidden-sm hidden-md hidden-lg">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <div class="featuredLogo">
+                <img src="images/logo01.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo02.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo03.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo04.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo05.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo06.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo07.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo08.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo09.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo091.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="sec02 hidden-xs">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="featuredLogo">
+                <img src="images/logo01.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo02.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo03.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo04.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo05.png" alt="">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="featuredLogo">
+                <img src="images/logo06.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo07.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo08.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo09.png" alt="">
+              </div>
+              <div class="featuredLogo">
+                <img src="images/logo091.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="download">
+    <article class="download-buttons">
+      <a target="_blank"
+        href="https://itunes.apple.com/us/app/dropcar-valet-parking-on-demand./id972228592?mt=8#"><button type="button"
+          name="button"><img src="images/appStore.png" alt=""></button></a>
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dropcar.owner"><button class="play"
+          type="button" name="button"><img src="images/googlePlay.png" alt=""></button></a>
+    </article>
+  </section>
+
+  <section class="sec03">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <figure class="descriptionImage">
+            <!-- <img class="aos-item aos-init aos-animate element A" data-aos="fade-in" src="images/rev-icon1.png" alt="">
+            <img class="aos-item aos-init aos-animate element B" data-aos="fade-in" src="images/rev-line1.png" alt="">
+            <img class="aos-item aos-init aos-animate element C" data-aos="fade-in" src="images/rev-icon2.png" alt="">
+            <img class="aos-item aos-init aos-animate element D" data-aos="fade-in" src="images/rev-line2.png" alt="">
+            <img class="aos-item aos-init aos-animate element E" data-aos="fade-in" src="images/rev-icon3.png" alt="">
+            <img class="aos-item aos-init aos-animate element F" data-aos="fade-in" src="images/rev-line3.png" alt=""> -->
+            <img id="iphone" class="aos-item aos-init aos-animate iphone" data-aos="fade-in"
+              src="images/iphoneDescription.gif" alt="">
+          </figure>
+          <div class="text">
+            <p>Still not sold? Crave deeper human interaction?</p>
+            <button class="invert buttonSchedule" type="button" name="button">CONTACT US</button>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="sec04a gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <div class="inner aos-item aos-init aos-animate" data-aos="fade-in">
+            <figure>
+              <img id="i360" src="images/360img.gif" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <div class="inner">
+            <h1>Save your Sunday.</h1>
+            <h3>Car maintenance is time consuming and expensive. We can help. DropCar 360 makes maintaining your vehicle
+              cost effective and easy.</h3>
+            <article class="download-buttons">
+              <a target="_blank"
+                href="https://itunes.apple.com/us/app/dropcar-valet-parking-on-demand./id972228592?mt=8#"><button
+                  type="button" name="button"><img src="images/appStore.png" alt=""></button></a>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dropcar.owner"><button
+                  class="play" type="button" name="button"><img src="images/googlePlay.png" alt=""></button></a>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec04">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-right hidden-sm hidden-md hidden-lg">
+          <div class="inner aos-item aos-init aos-animate" data-aos="fade-in">
+            <figure>
+              <img src="images/fijiWater.png" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-left">
+          <div class="inner">
+            <h1>Now serving Earth’s Finest Water.</h1>
+            <h3>We've partnered with FIJI Water, the #1 premium imported bottled water in the United States, to keep you
+              hydrated while on the go.</h3>
+            <article class="download-buttons">
+              <a target="_blank"
+                href="https://itunes.apple.com/us/app/dropcar-valet-parking-on-demand./id972228592?mt=8#"><button
+                  type="button" name="button"><img src="images/appStore.png" alt=""></button></a>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dropcar.owner"><button
+                  class="play" type="button" name="button"><img src="images/googlePlay.png" alt=""></button></a>
+            </article>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-right hidden-xs">
+          <div class="inner aos-item aos-init aos-animate" data-aos="fade-in">
+            <figure>
+              <img src="images/fijiWater.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec05 gray">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-left">
+          <div class="inner aos-item aos-init aos-animate" data-aos="fade-in">
+            <figure>
+              <img src="images/zendrive.png" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-16 col-md-6 col-lg-6 col-right">
+          <div class="inner">
+            <h1>Safe driving is in our DNA.</h1>
+            <h3>We’ve integrated Zendrive into our technology to track route and drive quality every time we get into a
+              car.</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>We'd love to connect with you</h1>
+          <div class="contactWays col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+            <a class="buttonSchedule">
+              <div class="contactWay">
+                <img src="images/messagebutton.png" alt="">
+              </div>
+            </a>
+
+            <a class="phone" href="tel:6463421595">
+              <div class="contactWay">
+                <img src="images/phone.png" alt="">
+                <div class="phoneNumber">
+                  <p><span>(646) 342 - 1595</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="contactWays col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+            <a target="_blank" href="https://www.facebook.com/dropcarapp/">
+              <div class="contactWay">
+                <img src="images/facebook.png" alt="">
+              </div>
+            </a>
+
+            <a target="_blank" href="https://twitter.com/dropcarapp">
+              <div class="contactWay">
+                <img src="images/twitter.png" alt="">
+              </div>
+            </a>
+
+            <a target="_blank" href="https://www.instagram.com/drop.car/">
+              <div class="contactWay">
+                <img src="images/instagram.png" alt="">
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <h3>Garage, restaurant, retail or venue owner interested in partnering?</h3>
+        <button class="buttonSchedule invert" type="button" name="button">CONTACT US</button>
+
+        <h1>Try DropCar</h1>
+
+        <article class="download-buttons">
+          <a target="_blank"
+            href="https://itunes.apple.com/us/app/dropcar-valet-parking-on-demand./id972228592?mt=8#"><button
+              type="button" name="button"><img src="images/appStore.png" alt=""></button></a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dropcar.owner"><button class="play"
+              type="button" name="button"><img src="images/googlePlay.png" alt=""></button></a>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="divider"></div>
+    <p class="operations">Hours of Operation:24 hours, 7 Days a Week</p>
+    <ul class="footer-nav">
+      <li class="nobullet"><a target="_blank" href="https://dropcar.zendesk.com/hc/en-us">Help Center</a></li>
+      <li><a target="_blank" href="https://dropcar.zendesk.com/hc/en-us/articles/206031681-Terms-Conditions">Terms &
+          Policies</a></li>
+      <li><a target="_blank"
+          href="http://www.jobscore.com/jobs2/dropcar/valet-parking-attendant/dn6k3oVOCr5iFIiGalkWKP">Become a Valet</a>
+      </li>
+    </ul>
+    <p class="copy">© Copyright – DropCar 2017</p>
+  </footer>
+
+
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/agency.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/include.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+  <!-- Start of dropcar Zendesk Widget script -->
+  <script>/*<![CDATA[*/window.zEmbed || function (e, t) { var n, o, d, i, s, a = [], r = document.createElement("iframe"); window.zEmbed = function () { a.push(arguments) }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document; try { o = s } catch (e) { n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s } o.open()._l = function () { var o = this.createElement("script"); n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o) }, o.write('<body onload="document._l();">'), o.close() }("//assets.zendesk.com/embeddable_framework/main.js", "dropcar.zendesk.com");
+/*]]>*/</script>
+  <!-- End of dropcar Zendesk Widget script -->
+
+</body>
+
+</html>

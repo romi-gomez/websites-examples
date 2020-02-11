@@ -1,0 +1,806 @@
+
+/* --------------------------------------------------
+MEDIA QUERIES
+-------------------------------------------------- */
+
+@media screen and (min-width:768px){
+
+
+  /* --------------------------------------------------
+  768 - CONTACT
+  -------------------------------------------------- */
+
+  .contact-right,
+  .contact-left{
+    width:40%;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .contact-left{
+    padding-bottom: 30px;
+    text-align: left;
+  }
+
+  .contact-info{
+    padding-bottom: 30px;
+    text-align: right;
+  }
+
+
+  .follow-info{
+    text-align: right;
+    padding-top: 30px;
+  }
+
+  .follow-icon{
+    width:25px;
+    height:25px;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .follow-icon img{
+    width:100%;
+  }
+
+/*---------------------------------
+-----------------------------------*/
+
+
+  #wrapper{
+    min-height: 100%;
+  }
+
+  section{
+    min-height: 100%;
+  }
+
+  header{
+    height: 100%;
+  }
+
+  header .carousel-inner .item{
+    height: 100%;
+  }
+
+  .carousel-fade .carousel-inner .item {
+    height: 100%;
+  }
+
+  #sec01 {
+      min-height: 100%;
+  }
+
+  #clients {
+      background-image: url(../../images/beneficios-bg.png);
+      min-height: 100%;
+      padding-top: 10%;
+      background-repeat: no-repeat;
+  }
+
+  .footer-right{
+    text-align: right;
+  }
+
+  /* --------------------------------------------------
+  > 768  - HOME HEADER
+  -------------------------------------------------- */
+
+  .title h1{
+    font-size: 60px;
+  }
+
+  .title h2{
+    font-size:30px;
+  }
+
+  #header01 .chat,
+  #header03 .chat{
+    width:400px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    padding-top: 30px;
+    margin-left: 5px;
+  }
+
+  #header02 .chat {
+    width: 520px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    padding-top: 30px;
+    margin-left: 5px;
+  }
+
+  .point{
+    margin-left: 3px;
+    width:15px;
+    height:15px;
+  }
+
+  .subtitle {
+      color: #FFF;
+      padding: 30px;
+      padding-top: 25%;
+      width: 90%;
+      max-width: 1170px;
+  }
+
+#home  .subtitle {
+    color: #FFF;
+    padding: 30px;
+    padding-top: 9%;
+    width: 90%;
+    max-width: 1170px;
+}
+
+#home .subtitle h2 {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 100;
+  padding-top: 0;
+  text-align: left;
+  line-height: 35px;
+}
+
+
+  .subtitle h2 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    padding-top: 0;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .carousel-fade .carousel-inner .item {
+    height: 100%;
+    min-height: 400px;
+  }
+
+
+  /* --------------------------------------------------
+  > 768  HOME - SEC1
+  -------------------------------------------------- */
+
+  #sec01{
+    margin-top:0;
+    padding-bottom: 30%;
+  }
+
+  #sec01 .text{
+    padding-left: 30px;
+  }
+
+  #sec01 h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #sec01 h3 span {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  /* --------------------------------------------------
+  > 768  - HOME SERVICES
+  -------------------------------------------------- */
+  #services {
+      background-image: url(../../images/sec02bg-min.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 0;
+      padding-bottom: 55%;
+      background-position: top;
+      background-size: 100%;
+
+}
+
+  #services .services{
+    text-align: center;
+    margin:0 auto;
+    margin-top: -90px;
+  }
+
+  .service-complete {
+    display: inline-block;
+    margin: .5%;
+}
+
+
+/* --------------------------------------------------
+> 768  - HOME ALIANCES
+-------------------------------------------------- */
+.division {
+    height: 5px;
+    width: 100%;
+    border-top: 2px dotted #FFF;
+    padding-bottom: 10%;
+}
+
+.aliance {
+    width: 140px;
+    height: 140px;
+}
+
+.client {
+    display: inline-block;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    margin: 1%;
+}
+
+/* --------------------------------------------------
+> 768  - CONTACT
+-------------------------------------------------- */
+
+#contact {
+    top: -50px;
+    left: 0;
+    height: 100%;
+}
+
+#contact-form {
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    height:100%;
+}
+
+
+
+/* --------------------------------------------------
+> 768  - SUMATE
+-------------------------------------------------- */
+
+#sumate{
+  background-size: initial;
+}
+
+#sumate #header .chat {
+    background-image: url(../../images/sumateChat.png);
+    background-size: 100%;
+    width: 90%;
+    padding: 10px;
+    padding-top: 28px;
+    padding-left: 30px;
+    padding-bottom: 90px;
+}
+
+#sumate #header .chat h1 {
+    font-size: 39px;
+    margin-bottom: 5px;
+}
+
+section#tecnologies {
+    background-color: transparent;
+    padding-top: 0;
+    margin-top: 12%;
+    color: #FFF;
+}
+
+#sumate .list-contact-form .contact-right,
+#sumate .list-contact-form .contact-left,
+#sumate #contact-form .contact-right,
+#sumate #contact-form .contact-left {
+    width: 45%;
+}
+
+#sumate #contact-form .bottom{
+  width:90%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#sumate #contact-form  button{
+  width:50%;
+  left:0;
+}
+
+section#espontanea,
+section#busquedas{
+  padding-top: 10%;
+}
+
+#culture-slider{
+  margin:0 auto;
+  text-align: center;
+}
+
+.culture-carousel{
+  width:49%;
+  display: inline-block;
+}
+
+.culture-carousel .carousel-inner{
+  overflow: hidden;
+  height:100%;
+  min-height: 0;
+}
+
+.culture-carousel .carousel-inner .item{
+    min-height: 0;
+}
+
+.culture-carousel .carousel-inner img{
+  height:100%;
+}
+
+/* --------------------------------------------------
+> 768  - COMUNIDAD
+-------------------------------------------------- */
+
+#comunidad #header .chat {
+    background-image: url(../../images/sumateChat.png);
+    background-size: 100%;
+    width: 86%;
+    padding: 29px;
+    padding-left: 30px;
+    padding-bottom: 67px;
+}
+
+#comunidad #header .title h1 {
+    font-size: 39px;
+}
+
+
+.comunity-inner {
+    width:49%;
+    display: inline-block;
+    min-height: 300px;
+}
+
+.comunity-inner .front{
+  min-height: 300px;
+}
+
+.comunity-inner .back {
+  min-height: 400px;
+}
+
+/* --------------------------------------------------
+> 768  - ACERCA
+-------------------------------------------------- */
+body#acerca{
+  background-color: transparent;
+}
+
+.acerca-txt {
+    margin-top: -25%;
+    padding-bottom: 20%;
+}
+
+#acerca  #services .service-complete{
+    width:48%;
+    text-align: center;
+}
+
+#acerca #services .service h4 {
+    text-align: center;
+    margin-left: 0;
+    font-weight: 200;
+    min-height: 100px;
+}
+}
+
+@media screen and (min-width:992px){
+
+  /* --------------------------------------------------
+  > 992  - NAVBAR
+  -------------------------------------------------- */
+
+
+  .container > .navbar-collapse{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-header{
+    width:100%;
+    text-align: center;
+    background-color: #FFF;
+    position: relative;
+    z-index: 9999999;
+  }
+
+  .hidden-nav{
+    margin-top: -150px;
+  }
+
+  .navbar-logo {
+    margin: 5px auto;
+    float: none;
+    min-width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .nav{
+    transition: all .3s ease-in;
+    position: relative;
+    z-index: 0;
+  }
+
+  .nav-buttons{
+    max-width: 1170px;
+  }
+
+  .nav-right {
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+    width: 20%;
+  }
+
+  .nav-right .nav-item{
+    width:20%;
+    padding-bottom: 0;
+    padding-top: 7px;
+  }
+
+  .nav-left {
+      width: 80%;
+      text-align: center;
+      font-size: 13px;
+  }
+
+  .nav-left .nav-item{
+    display: inline-block;
+    width:15%;
+    text-align: center;
+  }
+
+  .navbar .navbar-nav > .nav-item > a {
+    width: 100%;
+  }
+
+  .nav > li > a {
+    padding:0;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  .nav-points{
+    margin:0 auto;
+    display: block;
+    width:100%;
+    margin-top: -5px;
+  }
+
+  .nav-points .point {
+    width: 7px;
+    height: 7px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+
+  /* --------------------------------------------------
+  > 992  - CONTACT
+  -------------------------------------------------- */
+
+  #contact {
+    top: 6%;
+    left: 2.5%;
+    height: 100%;
+}
+
+/* --------------------------------------------------
+> 992  - HOME - sec01
+-------------------------------------------------- */
+
+#sec01 {
+  margin-top: 0;
+  padding-bottom:15%;
+}
+
+#sec01  .text {
+    padding-left: 30px;
+    padding-top: 15%;
+}
+
+
+  /* --------------------------------------------------
+  > 992  - SUBTITLE
+  -------------------------------------------------- */
+  .subtitle h2 {
+      width: 100%;
+      font-size: 21px;
+      font-weight: 100;
+      padding-top: 90px;
+      text-align: left;
+      line-height: 30px;
+  }
+  /* --------------------------------------------------
+  > 992  - COMUNIDAD
+  -------------------------------------------------- */
+
+  #comunidad #header .chat {
+      width: 86%;
+      padding: 33px;
+      padding-top: 40px;
+      padding-bottom: 100px;
+  }
+
+    #comunidad #header .chat h1{
+      font-size: 51px;
+    }
+
+
+    /* --------------------------------------------------
+    > 992  - ACERCA
+    -------------------------------------------------- */
+
+
+    #acerca #services .service span {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#acerca #services #s-ux .service span {
+    font-size: 27px;
+}
+
+}
+
+@media screen and (min-width:1024px){
+.carousel-fade .carousel-inner .item {
+  height: 100%;
+  min-height: 550px;
+}
+
+.subtitle h2 {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 100;
+    padding-top: 25%;
+    text-align: left;
+    line-height: 35px;
+}
+
+#home .subtitle {
+    color: #FFF;
+    padding: 30px;
+    padding-top: 10%;
+    width: 90%;
+    max-width: 1170px;
+}
+
+/* --------------------------------------------------
+> 1024  - COMUNIDAD
+-------------------------------------------------- */
+
+.comunity-inner {
+    width: 47%;
+    display: inline-block;
+    min-height: 400px;
+
+}
+.comunity-inner.left{
+  margin-right: 3%;
+}
+
+/* --------------------------------------------------
+> 1024  - ACERCA
+-------------------------------------------------- */
+
+.acerca-txt {
+    margin-top: -7%;
+    padding-bottom: 25%;
+}
+
+  /* --------------------------------------------------
+  > 1024  - SUMATE
+  -------------------------------------------------- */
+  #sumate #header .chat {
+    width: 70%;
+}
+
+section#tecnologies {
+    margin-top: 0;
+}
+
+  #culture-slider {
+      margin: 0 auto;
+      text-align: center;
+      min-height: 0;
+      padding-top: 0;
+      width: 100%;
+  }
+
+  .culture-carousel {
+      width: 24.5%;
+      display: inline-block;
+      margin: 0;
+  }
+
+  .culture-carousel .carousel-inner{
+    overflow: hidden;
+    height:100%;
+    min-height: 0;
+  }
+
+  .culture-carousel .carousel-inner .item{
+      min-height: 0;
+  }
+
+  .culture-carousel .carousel-inner img{
+    height:100%;
+  }
+
+
+}
+
+
+@media screen and (min-width:1280px){
+  body#home,
+  body#sumate,
+  body#comunidad,
+  body#acerca,
+  header .carousel-inner .item#header01,
+  header .carousel-inner .item#header02,
+  header .carousel-inner .item#header03{
+    background-size: initial;
+  }
+
+  .subtitle h2 {
+      font-size: 25px;
+      line-height: 35px;
+      padding-top: 10%;
+  }
+
+  .carousel-fade .carousel-inner .item {
+    height: 100%;
+    min-height: 650px;
+  }
+
+
+#culture-slider .carousel-fade .carousel-inner .item {
+    height: 100%;
+    min-height:0;
+}
+
+  section#tecnologies {
+    background-color: transparent;
+    padding-top: 0;
+    margin-top: 8%;
+    color: #FFF;
+}
+
+#acerca #services .service span {
+    font-size: 29px;
+}
+
+#acerca #services .service span {
+    font-size: 29px;
+}
+
+#acerca #services #s-ux .service span{
+  font-size: 30px;
+}
+
+
+  /* --------------------------------------------------
+  > 1280  - CONTACT
+  -------------------------------------------------- */
+  #contact {
+      left: 12%;
+      top: 0;
+  }
+
+  /* --------------------------------------------------
+  > 1280  - SUMATE
+  -------------------------------------------------- */
+
+  #sumate #header .chat {
+      padding: 10px;
+      padding-top: 40px;
+      padding-left: 30px;
+      padding-bottom: 97px;
+  }
+
+  #sumate #header .chat h1 {
+      font-size: 52px;
+      padding-bottom: 10px;
+  }
+
+
+  /* --------------------------------------------------
+  > 1280  - COMUNIDAD
+  -------------------------------------------------- */
+
+  #comunidad #header .chat {
+    width: 86%;
+    padding: 33px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+
+  #comunidad #header .title h1 {
+    font-size: 63px;
+}
+
+  #comunidad #header .title h2 {
+    font-size: 36px;
+}
+
+/* --------------------------------------------------
+> 1440  - ACERCA
+-------------------------------------------------- */
+
+.acerca-txt {
+    margin-top: -20%;
+    padding-bottom: 25%;
+}
+
+}
+
+
+@media screen and (min-width:1440px){
+
+  /* --------------------------------------------------
+1440 - BACKGROUNDS
+  -------------------------------------------------- */
+
+  body#home,
+  body#comunidad,
+  body#acerca{
+    background-image: url(../../images/home01.png);
+  }
+
+  header .carousel-inner .item#header01{
+    background-image: url(../../images/home01.png);
+  }
+
+  header .carousel-inner .item#header02{
+    background-image: url(../../images/home02.png);
+  }
+
+  header .carousel-inner .item#header03{
+    background-image: url(../../images/home03.png);
+  }
+
+  #sumate{
+    background-image: url(../../images/sumateheaderbg.png);
+  }
+
+  #services {
+    background-image: url(../../images/sec02bg.png);
+  }
+
+}
+
+
+@media screen and (min-width:1900px){
+
+#home #sec01 {
+      margin-top: -20%;
+      padding-bottom: 10%;
+  }
+
+  #contact {
+      left: 18%;
+  }
+  section{
+    min-height: 50%;
+  }
+  #sec01 {
+    margin-top: -40%;
+    padding-bottom: 30%;
+}
+
+#clients {
+    min-height: 50%;
+}
+
+#services {
+    background-size: 100%;
+}
+
+#aliances{
+  padding-bottom: 10%;
+}
+
+}

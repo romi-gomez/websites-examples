@@ -1,0 +1,1535 @@
+/*FADE CAROUSEL  */
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+/*FADE CAROUSEL  */
+
+@font-face {
+  font-family: 'nerisLight';
+  src: url('fonts/neris-light-webfont.woff2') format('woff2'),
+  url('fonts/neris-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nerisSemiBold';
+  src: url('fonts/neris-semibold-webfont.woff2') format('woff2'),
+  url('fonts/neris-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nerisThin';
+  src: url('fonts/neris-thin-webfont.woff2') format('woff2'),
+  url('fonts/neris-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*---------------------------------------------
+GENERAL
+---------------------------------------------*/
+html, body{
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+body{
+  min-width: 320px;
+  color: #444444;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: 4.5vw;
+  color: #FFF;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.7vh;
+  line-height: 4vh;
+}
+
+h3{
+  font-size: 1.5vh;
+  line-height: 1.7vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+a:hover{
+  text-decoration: none;
+}
+
+.right{
+  float: right;
+  text-align: right;
+}
+
+.left{
+  float: left;
+  text-align: left;
+}
+
+
+button {
+    max-width: 200px;
+    /* min-width: 100px; */
+    width: 45%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 1.3vw;
+    color: #002342;
+    font-weight: 600;
+    background-color: rgb(220, 216, 56);
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    cursor:pointer;
+}
+
+button.invert {
+  color:rgb(220, 216, 56);
+  background-color: #002342;
+}
+
+.right .button-cta{
+  float: right;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display:block;
+}
+
+
+/*---------------------------------
+NAVBAR
+---------------------------------*/
+.nav-container {
+  width: 95%;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-header{
+  width:15%;
+}
+
+.logoHeader {
+  width:50%;
+  max-width: 190px;
+  min-width: 150px;
+  margin-top: 7px;
+  margin-right: 20px;
+}
+
+
+.navbar-nav {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  min-height: 70px;
+}
+
+.navbar-default .navbar-nav > li{
+  margin-left: 10px;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #FFF;
+  font-size: 15px;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 11px;
+  margin-left: 30px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {
+    color: #FFF;
+    border: none;
+    border-bottom: 4px solid #FFF;
+}
+
+.navbar-default .navbar-nav > li.signup > a {
+  color: #002342;
+  font-weight: 600;
+  background-color: rgb(220, 216, 56);
+  border-radius: 50px;
+  padding: 15px 20px;
+  margin-top: -5px;
+}
+.navbar-default .navbar-nav > li.signup > a:hover{
+  border: none;
+}
+
+.navbar-default .navbar-nav>.active>a{
+  background-color:transparent;
+  color:#FFF;
+}
+
+.navbar-toggle{
+  border: none;
+  margin-top: 15px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+  background-color: transparent;
+}
+
+.navbar-toggle .fa-bars {
+  font-size: 2.5em;
+  margin-top: 5px;
+  color: #FFF;
+}
+
+.navbar-fixed-top{
+  position:relative;
+  margin-bottom: -110px;
+}
+
+.press-menu li{
+  padding-top: 5px;
+}
+
+.press-menu a{
+  color: #FFF;
+}
+
+.press-menu a:hover{
+  color: #FFF;
+  text-decoration: underline;
+}
+
+
+.press-menu{
+  position: absolute;
+  width:300px;
+  right: 10px;
+  text-align: right;
+  display: none;
+  list-style: none;
+}
+
+/*---------------------------------
+HEADER
+---------------------------------*/
+
+header{
+  padding-top: 150px;
+  min-height: 500px;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .sectionCol {
+  padding-top: 15%;
+}
+
+header h1{
+  text-align: left;
+  font-size: 6vw;
+}
+
+header h2 {
+    color: #FFF;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.videoIntro {
+    width: 40%;
+    bottom: 0;
+    margin-top: 20%;
+    padding-bottom: 0;
+    float: right;
+    margin-right: 30%;
+    margin-bottom: 10%;
+}
+
+.videoIntro video {
+    position: relative;
+    z-index: 999;
+    margin-bottom: -40%;
+    width: 90%;
+    left: 5%;
+}
+
+.videoIntro img {
+    width: 100%;
+    margin-top: -143%;
+    z-index: 99;
+    position: relative;
+}
+
+/*---------------------------------
+SIGN UP FIRST
+---------------------------------*/
+.signUpSecc {
+  background-image: url(../images/blueBG.jpg);
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+}
+.signUpSecc h2{
+  color:#f8ff00;
+  line-height: 2.7vw;
+  font-size: 2.5vw;
+}
+
+.message {
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 16%;
+}
+
+/*---------------------------------
+SIGN UP FIRST - Slider
+---------------------------------*/
+.testimonials {
+    text-align: left;
+    color: #FFF;
+    height: 300px;
+}
+
+.testimonials h3{
+  font-size: 2vw;
+  color: rgb(220, 216, 56);
+  font-weight: bold;
+}
+
+.testimonials h4{
+  font-size: 1.5vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.testimonials p{
+  margin-top: 30px;
+}
+
+.carousel-inner .item figure img{
+  width:35px;
+  padding-left: 5px;
+}
+
+.download-buttons{
+  width:100%;
+  text-align: left;
+}
+
+
+.download-buttons button img{
+  width:100%;
+}
+
+
+.download-buttons button.play{
+  margin-left: 20px;
+}
+
+
+/*---------------------------------
+SECTIONS - GENERAL
+---------------------------------*/
+section{
+  padding-top: 30px;
+  padding-bottom:  30px;
+}
+
+section.gray{
+  background-color: #f2f2f2;
+}
+
+section figure img{
+  width :90%;
+}
+
+section h1 {
+  color: #007efd;
+  font-size: 3vw;
+  text-align: left;
+  font-weight: 600;
+}
+
+section h3 {
+  font-size: 1.2vw;
+  line-height: 1.9vw;
+}
+
+
+.inner{
+  width:90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inner h3{
+  text-align: left;
+}
+
+/*---------------------------------
+SECTIONS - DOWNLOAD
+---------------------------------*/
+.download {
+  position: relative;
+  background-image: url(../images/blueBG.jpg);
+  z-index: 999;
+}
+
+.download article{
+  width:100%;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.download button{
+  max-width: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*---------------------------------
+SECTIONS - 01
+---------------------------------*/
+
+.sec01{
+  padding-top: 50px;
+}
+
+.sec01{
+  text-align: center;
+}
+
+.sec01 h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 6vw;
+}
+
+.sec01 h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sec01 .options{
+  margin-top: 50px;
+}
+
+.sec01 .options .option{
+  text-align: center;
+}
+
+.option .optioninner {
+    width: 100%;
+}
+
+.option .optioninner .will {
+    margin-right: -25%;
+}
+
+.option .optioninner .steve {
+    margin-left: -25%;
+}
+
+
+.sec01 figure {
+    width: 46%;
+    margin: 0 auto;
+}
+
+.sec01 figure img{
+  width:100%;
+}
+
+
+.sec01 .options .option h2{
+  font-size: 2.5vw;
+  color: #007efd;
+  font-weight: bold;
+}
+
+.sec01 .options .option p {
+  font-size: 1vw;
+  min-height: 20px;
+}
+
+.sec01 .options .option .price{
+  color: #007efd;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.sec01 .options .option .price span{
+  font-size: 1.2vw;
+}
+
+.sec01 .options .option .tax {
+    margin-top: -20px;
+    font-size: .95vw;
+    color: #007efd;
+}
+
+.item.roll {
+    font-size: 1.8vw;
+    margin-bottom: 10px;
+}
+
+.waitTxt{
+  height: 50px;
+}
+
+/*---------------------------------
+SECTIONS - 02
+---------------------------------*/
+.sec02 .container{
+  width:90%;
+  margin:0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sec02 h1 {
+  text-align: center;
+}
+
+.sec02 .featuredLogo{
+  width:19%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sec02 .featuredLogo img{
+  width:100%;
+}
+
+/*---------------------------------
+SECTIONS - 03
+---------------------------------*/
+
+.sec03 {
+  background-color: #dcd838;
+  text-align: center;
+}
+
+.sec03 h1{
+  color:#FFF;
+}
+
+.sec03 button {
+  margin-top: 30px;
+}
+
+.sec03 .text p{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2vw;
+  margin-right: 30px;
+}
+
+.sec03 .text button{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.sec03 .descriptionImage {
+  width:90%;
+  margin: 0 auto;
+}
+
+
+
+/*---------------------------------
+SECTIONS - 04
+---------------------------------*/
+.sec04a figure{
+  width: 60%;
+  margin-left: 20%;
+}
+
+
+.sec04 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sec04 figure{
+  width:20%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.sec04 figure img{
+  width:100%;
+  margin:0 auto;
+}
+
+/*---------------------------------
+SECTIONS - 05
+---------------------------------*/
+
+.sec05{
+  padding-top: 70px;
+  padding-bottom:70px;
+}
+
+.sec05 figure {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.sec05 figure img {
+  width: 75%;
+  /* margin-left: 20%; */
+}
+
+/*---------------------------------
+SECTIONS - CONTACT
+---------------------------------*/
+
+.contact{
+  background-image: url(../images/pie.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.contact h1{
+  text-align: center;
+  color: #FFF;
+}
+
+.contact h2{
+  font-weight: bold;
+}
+
+.contact h3 {
+  text-align: center;
+  color: #FFF;
+  font-size: 2vw;
+  margin-top: 40px;
+}
+
+
+.contact .contactWays{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+.contact .contactWays .contactWay{
+  width:15%;
+  color: #FFF;
+  font-weight: bold;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  height:150px;
+}
+
+.contact .contactWays .contactWay img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.contact .contactWays .contactWay p span {
+  color: rgb(220, 216, 56);
+  font-size: 1.5vw;
+}
+
+.contact .download-buttons{
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+}
+
+.phoneNumber{
+  display: none;
+}
+
+/*-------------------------------
+FOOTER
+---------------------------------*/
+
+footer{
+  text-align: center;
+  font-size: 1.5vh;
+  padding-top:50px;
+  padding-bottom: 10px;
+}
+
+footer .operations {
+  color: #002342;
+  font-size: 1vw;
+}
+
+footer ul{
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 5px;
+}
+
+footer ul li{
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer ul li a{
+  text-decoration: underline;
+  color: #002342;
+}
+
+footer ul li.nobullet  a:before {
+  content: none;
+  top: -3px;
+  padding:0;
+}
+
+
+footer ul li  a:before {
+  content: url(../images/bottomBarSeparator.png);
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  padding: 0px 15px 0px 0px;
+}
+
+footer ul:nth-child(0){
+  background-color: #000;
+}
+
+footer .copy {
+    color: #999;
+    margin-top: 10px;
+}
+
+/*-------------------------------
+CONTACT FORM
+---------------------------------*/
+
+.scheduleForm{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index: 9999999999999;
+  margin:0;
+  padding: 0;
+}
+
+.scheduleModal{
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.7);
+}
+
+.formContainer{
+  width: 500px;
+  padding-bottom: 50px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  padding: 20px;
+  background-color: #FFF;
+}
+
+.formHeader{
+  width:100%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.formHeader figure{
+  float: left;
+  width: 50%;
+}
+
+.formHeader .closeForm{
+  float:right;
+  font-size: 3vw;
+  margin-top: 10px;
+  margin-right: 30px;
+  color: #007efd;
+}
+
+
+.formContainer h1 {
+  color: #000;
+  font-size: 2.5vw;
+}
+
+.scheduleDemoForm{
+  width:100%;
+}
+
+.scheduleDemoForm input,
+.scheduleDemoForm textarea{
+  background-color: #f2f2f2;
+  width:100%;
+  border:none;
+  margin: 5px 0;
+  padding-left:10px;
+}
+
+.scheduleDemoForm input{
+  height:30px;
+}
+
+.contact-cta{
+  width: 100%;
+  text-align: center;
+}
+
+.contact-cta button{
+  width: 200px;
+}
+
+.formMessages{
+  width:100%;
+  min-height:30px;
+  text-align: center;
+  color: #FFF;
+  padding: 5px;
+  padding-top: 3px;
+  margin-top: 20px;
+}
+
+.formMessages.error{
+  color:red;
+  border:red solid 1px;
+}
+
+.formMessages.success{
+  color: green;
+  border: green solid 1px;
+}
+
+/*-------------------------------
+MOBILE < 1024
+---------------------------------*/
+@media screen and (max-width: 1024px){
+
+  footer .operations {
+    color: #002342;
+    font-size: 2vw;
+  }
+
+}
+
+/*-------------------------------
+MOBILE < 990
+---------------------------------*/
+@media screen and (max-width: 990px){
+
+  .nav-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #mainNav{
+    background-color: #002342;
+    position: fixed;
+    padding-bottom: 10px;
+  }
+
+  .logoHeader {
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+
+  .navbar-header {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  .navbar-brand {
+    width: 40%;
+  }
+
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+
+  .navbar-toggle .fa-bars {
+    font-size: 3.5vw;
+    margin-top: 3px;
+    margin-right: -120px;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.1);
+  }
+
+  .navbar-nav {
+    margin: 7.5px -15px;
+    overflow-x: hidden;
+  }
+
+
+  .navbar-default .navbar-nav > li {
+    margin: 10px 0;
+    padding-left: 30px;
+  }
+
+  .navbar-default .navbar-nav > li > a:active,
+  .navbar-default .navbar-nav > li > a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,.6);
+    border:none;
+  }
+
+  .navbar-default .navbar-nav > li.signup{
+    background-color:rgb(220, 216, 56);
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+
+  }
+
+  .navbar-default .navbar-nav > li.signup > a {
+    color: #002342;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+
+  .sec04 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .sec04 figure img {
+    width: 70%;
+    margin-left: 17%;
+    margin-top: 0px;
+  }
+
+
+}
+
+/*-------------------------------
+MOBILE < 920
+---------------------------------*/
+@media screen and (max-width: 920px){
+
+
+  /*-----------------REVIE W*/
+  section h3 {
+    font-size: 2.2vw;
+    line-height: 2.9vw;
+  }
+
+  .sec01 h1 {
+    font-size: 6vw;
+  }
+
+  .sec01 .options .option p {
+    font-size: 2vw;
+  }
+
+  .sec01 .options .option .price {
+    font-size: 5vw;
+  }
+
+  .testimonials {
+    height: 280px;
+  }
+
+  .sec03 .text p {
+    font-size: 2.2vw;
+  }
+
+  .sec04 figure {
+    width: 50%;
+  }
+
+  button {
+    width: 45%;
+  }
+
+  button img{
+    width:105%;
+  }
+
+  /*-----------------REVIE W*/
+
+  section h1 {
+    font-size: 5vw;
+  }
+
+  .contact h3 {
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+
+
+  h1{
+    font-size: 6vw;
+  }
+
+  button{
+    font-size: 2vw;
+  }
+
+  header{
+    min-height:300px;
+  }
+
+  .signUpSecc h2{
+    line-height: 3.3vw;
+    font-size: 3vw;
+  }
+
+#error  #mainNav {
+    background-color: rgba(255,255,255,0);
+}
+
+
+}
+
+/*-------------------------------
+MOBILE < 768
+---------------------------------*/
+
+@media screen and (max-width: 768px){
+
+
+  .logoHeader {
+    min-width: 150px;
+  }
+
+  section h1 {
+    font-size: 4vw;
+  }
+
+  section h3 {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+
+  .sec01 h1 span {
+    font-size: 2.5vw;
+    line-height: 1.5vw;
+  }
+
+  .sec03 button {
+    margin-bottom: 154px;
+  }
+
+  .sec06 figure img{
+    margin-top: 15%;
+    width: 100%;
+  }
+
+  .formContainer h1 {
+    font-size: 4.5vw;
+  }
+
+  /*-----------------------------Revie w*/
+  .sec03 .text p {
+      margin-top: 40px;
+      display: block;
+  }
+
+  .sec03 .text button{
+    margin-bottom: 20px;
+  }
+
+  .videoIntro {
+    margin-top: 30%;
+  }
+
+
+  .videoIntro img {
+      margin-top: -144%;
+  }
+
+  #error header h1#e404{
+      padding-top: 20%;
+  }
+
+}
+
+
+/*-------------------------------
+MOBILE < 425
+---------------------------------*/
+/*
+@media screen and (max-width: 425px){
+
+h1 {
+font-size: 8vw;
+}
+
+.logoHeader {
+min-width: 135px;
+}
+
+.navbar-toggle .fa-bars {
+margin-top: 12px;
+}
+
+.signUpSecc h2 {
+line-height: 7vw;
+font-size: 6vw;
+}
+
+button {
+font-size: 3vw;
+}
+
+.sec01 {
+background-size: 50% auto;
+}
+
+.sec03 {
+background-size: 160% auto;
+background-position-y: 200px;
+background-position-x: -200px;
+}
+
+.sec03 button {
+margin-bottom: 100px;
+}
+
+.sec04 {
+padding-top: 40px;
+padding-bottom: 0px;
+}
+
+.sec06{
+padding-bottom: 0;
+}
+
+.footer-nav{
+margin-top: 0;
+margin-bottom: 10px;
+margin-left: -5px;
+padding-left: 0;
+}
+
+footer ul li{
+padding: 10px;
+padding-right:0;
+}
+
+}*/
+
+/*-------------------------------
+MOBILE < 480
+---------------------------------*/
+
+@media screen and (max-width: 480px){
+
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {
+      color: rgba(255,255,255,.7);
+      border: none;
+      border-bottom: none;
+  }
+
+  .logoHeader {
+    min-width: 100px;
+    margin-top: -5px;
+  }
+
+  header h1 {
+    text-align: left;
+    font-size: 16vw;
+    margin-top: -70px;
+  }
+
+  .videoIntro {
+      width: 64%;
+      margin: 0 auto;
+      margin-top: 20%;
+      padding-bottom: 0;
+      float: none;
+      margin-right: none;
+      margin-bottom: 10%;
+  }
+
+  .videoIntro video{
+    position: relative;
+    z-index: 999;
+    margin-bottom: -38%;
+    width:89%;
+    left: 5%;
+  }
+
+  .inner h3 {
+    text-align: center;
+  }
+
+  .sec05 figure img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  button {
+    font-size: 5vw;
+  }
+
+  .navbar-header button{
+    margin: 0;
+    margin-top: 7px;
+    font-size: 3vw;
+  }
+
+  .navbar-toggle .fa-bars {
+      font-size: 6.5vw;
+      margin-top: 6px;
+      margin-right: -100px;
+  }
+
+  .signUpSecc h2 {
+    line-height: 9vw;
+    font-size: 6vw;
+  }
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  .col-xs-6{
+    width:100%;
+  }
+  section{
+    text-align: center;
+  }
+
+  section h1 {
+    font-size: 12vw;
+    text-align: center;
+    line-height: 15vw;
+  }
+
+  section h3 {
+    font-size: 5vw;
+    line-height: 6.5vw;
+  }
+
+
+  /*GREAT TO MEET YOU SECTION*/
+
+  .option .optioninner {
+    width: 100%;
+  }
+
+  .sec01 h1 {
+    line-height: 15vw;
+    font-size: 14vw;
+  }
+
+  .sec01 .options .option h2 {
+    font-size: 9.5vw;
+    color: #007efd;
+    font-weight: bold;
+  }
+
+  .item.roll {
+    font-size: 6vw;
+  }
+
+  .sec01 .options .option .price {
+      font-size: 10vw;
+      margin-top: -33px;
+      margin-bottom: 30px;
+  }
+
+  .sec01 .options .option .price span {
+    font-size: 6.2vw;
+  }
+
+  .waitTxt {
+    height: 90px;
+    font-size: 5vw;
+  }
+
+  .sec01 h1 span {
+    font-size: 4vw;
+  }
+
+  .sec01 .options .option .tax {
+      margin-top: -42px;
+      margin-bottom: 30px;
+      font-size: 4vw;
+      color: #007efd;
+  }
+
+  .option .optioninner .will {
+    margin-right: 0;
+}
+
+.option .optioninner .steve {
+  margin-left: 0;
+}
+
+.option .optioninner .steve .price{
+    margin-top: 20px;
+
+}
+
+  /*SEC 02*/
+
+  .sec02 .featuredLogo {
+    width: 49%;
+  }
+
+  .download-buttons {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+  }
+
+  button {
+    width: 60%;
+  }
+
+  .download-buttons button {
+    display: block;
+    max-width: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .download-buttons button.play{
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .sec03 {
+    background-size: 160% auto;
+    /* background-position-y: 200px; */
+    background-position-x: -220px;
+    background-position: bottom right;
+  }
+
+  .sec03 button {
+    margin-bottom: 240px;
+  }
+
+  .sec03 figure img {
+    width: 104%;
+  }
+
+  .sec03 .text p {
+    display: block;
+    font-size: 6vw;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .sec04 figure img {
+    width: 60%;
+    margin-left: 0%;
+    margin-top: 0px;
+  }
+
+  .sec05 figure {
+    float: none;
+  }
+
+  footer ul li {
+    padding: 5px;
+    padding-right: 0;
+  }
+
+  .formContainer{
+    width:90%;
+    padding-bottom: 50px;
+    position: fixed;
+    left: 5%;
+    top:50%;
+    margin-left: 0;
+    margin-top: -250px;
+    padding: 20px;
+    background-color: #FFF;
+  }
+
+  .formContainer h1 {
+    font-size: 7.5vw;
+  }
+
+  .formHeader .closeForm {
+    font-size: 5vw;
+  }
+
+  .testimonials h3 {
+    font-size: 7vw;
+
+  }
+
+  .testimonials h4 {
+    font-size: 5.5vw;
+  }
+
+  .testimonials {
+    height: 320px;
+    width:90%;
+    margin:0 auto;
+    margin-top: 10%;
+  }
+
+  .contact .contactWays {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .contact .contactWays .contactWay{
+    width:32%;
+  }
+
+
+  .contact .contactWays .contactWay img {
+    width: 80%;
+  }
+
+  .contact h3 {
+    font-size: 7vw;
+    line-height: 8.5vw;
+  }
+
+  .contact h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 10vw;
+  }
+
+  .contact .download-buttons{
+    margin-top: 40px;
+  }
+
+  footer .operations {
+    font-size: 3vw;
+}
+
+
+
+}
+
+/*--------------------------------------
+MOBILE 375
+-------------------------------------*/
+
+
+/*--------------------------------------
+404
+-------------------------------------*/
+
+#error{
+  background-image: url(../images/404bg.jpg);
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#error header{
+  background-image: none;
+  text-align: center;
+  padding-top: 18%;
+}
+
+#error header h1#e404{
+  text-align: center;
+}
+
+#error header h2{
+  font-size: 20px;
+}
+
+#error footer{
+  background-color: rgba(255,255,255,0);
+  color:#FFF;
+  margin
+}
+
+.buttonError{
+  background-color: #48c79c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#error footer .copy {
+    color: #FFF;
+}
